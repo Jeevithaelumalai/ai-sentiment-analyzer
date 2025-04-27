@@ -1,0 +1,72 @@
+:root {
+    --happy: #2ecc71;
+    --sad: #3498db;
+    --angry: #e74c3c;
+    --anxious: #f39c12;
+    --neutral: #7f8c8d;
+    --excited: #9b59b6;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.hidden {
+    display: none;
+}
+
+textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    min-height: 120px;
+}
+
+button {
+    background: #4a6fa5;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background: #3a5a8c;
+    transform: translateY(-2px);
+}
+
+#results {
+    margin-top: 30px;
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Mood-specific colors */
+#moodResult.happy { color: var(--happy); }
+#moodResult.sad { color: var(--sad); }
+#moodResult.angry { color: var(--angry); }
+#moodResult.anxious { color: var(--anxious); }
+#moodResult.neutral { color: var(--neutral); }
+#moodResult.excited { color: var(--excited); }

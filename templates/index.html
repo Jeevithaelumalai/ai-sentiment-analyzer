@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Mood Analyzer</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🤖 AI Mood Companion</h1>
+        
+        <form id="moodForm">
+            <textarea id="userText" placeholder="How are you feeling today?"></textarea>
+            <button type="submit">Analyze My Mood</button>
+        </form>
+        
+        <div id="results" class="hidden">
+            <h2>You're feeling: <span id="moodResult"></span></h2>
+            <div class="activities">
+                <h3>We suggest:</h3>
+                <ul id="activityList"></ul>
+            </div>
+        </div>
+    </div>
+    
+    <script src="/static/script.js"></script>
+</body>
+</html>
